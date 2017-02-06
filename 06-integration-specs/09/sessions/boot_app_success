@@ -1,0 +1,10 @@
+$ bundle exec rackup
+[2017-01-29 21:46:49] INFO  WEBrick 1.3.1
+[2017-01-29 21:46:49] INFO  ruby 2.4.0 (2016-12-24) [x86_64-darwin15]
+[2017-01-29 21:46:49] INFO  WEBrick::HTTPServer#start: pid=48582 port=9292
+::1 - - [29/Jan/2017:21:46:49 -0800] "POST /expenses HTTP/1.1" 200 16 0.0084
+::1 - - [29/Jan/2017:21:46:49 -0800] "POST /expenses HTTP/1.1" 200 16 0.0026
+::1 - - [29/Jan/2017:21:46:49 -0800] "GET /expenses/2016-07-01 HTTP/1.1" 200↩
+120 0.0016
+[2017-01-29 21:46:49] INFO  going to shutdown ...
+[2017-01-29 21:46:49] INFO  WEBrick::HTTPServer#start done.

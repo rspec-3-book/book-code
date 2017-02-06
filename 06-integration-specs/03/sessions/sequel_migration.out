@@ -1,0 +1,28 @@
+$ bundle exec sequel -m ./db/migrations sqlite://db/development.db --echo
+I, [2017-01-24T09:22:13.096035 #39635]  INFO -- : (0.002683s) PRAGMA        ↩
+foreign_keys = 1
+I, [2017-01-24T09:22:13.096140 #39635]  INFO -- : (0.000024s) PRAGMA        ↩
+case_sensitive_like = 1
+I, [2017-01-24T09:22:13.099328 #39635]  INFO -- : (0.000300s) SELECT        ↩
+sqlite_version()
+I, [2017-01-24T09:22:13.100490 #39635]  INFO -- : (0.000932s) CREATE TABLE  ↩
+IF NOT EXISTS `schema_info` (`version` integer DEFAULT (0) NOT NULL)
+I, [2017-01-24T09:22:13.100694 #39635]  INFO -- : (0.000080s) SELECT * FROM ↩
+`schema_info` LIMIT 1
+I, [2017-01-24T09:22:13.100838 #39635]  INFO -- : (0.000042s) SELECT 1 AS   ↩
+'one' FROM `schema_info` LIMIT 1
+I, [2017-01-24T09:22:13.101456 #39635]  INFO -- : (0.000510s) INSERT INTO   ↩
+`schema_info` (`version`) VALUES (0)
+I, [2017-01-24T09:22:13.101652 #39635]  INFO -- : (0.000066s) SELECT        ↩
+count(*) AS 'count' FROM `schema_info` LIMIT 1
+I, [2017-01-24T09:22:13.101787 #39635]  INFO -- : (0.000056s) SELECT        ↩
+`version` FROM `schema_info` LIMIT 1
+I, [2017-01-24T09:22:13.102032 #39635]  INFO -- : Begin applying migration  ↩
+version 1, direction: up
+I, [2017-01-24T09:22:13.102965 #39635]  INFO -- : (0.000724s) CREATE TABLE  ↩
+`expenses` (`id` integer NOT NULL PRIMARY KEY AUTOINCREMENT, `payee`        ↩
+varchar(255), `amount` double precision, `date` date)
+I, [2017-01-24T09:22:13.103746 #39635]  INFO -- : (0.000594s) UPDATE        ↩
+`schema_info` SET `version` = 1
+I, [2017-01-24T09:22:13.103793 #39635]  INFO -- : Finished applying         ↩
+migration version 1, direction: up, took 0.001758 seconds

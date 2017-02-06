@@ -1,0 +1,2 @@
+-I<%= ENV['HOME'] %>/rspec-print_failures_eagerly/lib
+--require 'rspec/print_failures_eagerly'

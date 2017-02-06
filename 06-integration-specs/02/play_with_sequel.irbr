@@ -1,0 +1,16 @@
+>> require 'sequel'
+=> true
+>> DB = Sequel.sqlite
+=> #<Sequel::SQLite::Database: {:adapter=>:sqlite}>
+>> DB.create_table :expenses do
+?>   primary_key :id
+>>   String :payee
+>>   Float :amount
+>>   Date :date
+>> end
+=> nil
+>> DB[:expenses].insert(payee: 'Starbucks', amount: 5.75, date: '2014-10-17')
+=> 1
+>> DB[:expenses].all
+=> [{:id=>1, :payee=>"Starbucks", :amount=>5.75, :date=>#<Date: 2014-10-17  ↩
+((2456948j,0s,0n),+0s,2299161j)>}]

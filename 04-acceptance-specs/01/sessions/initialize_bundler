@@ -1,0 +1,2 @@
+$ gem install bundler
+$ bundle init

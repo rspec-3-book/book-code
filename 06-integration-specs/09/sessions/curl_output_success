@@ -1,0 +1,9 @@
+$ curl localhost:9292/expenses --data '{"payee":"Zoo", "amount":10,         ↩
+"date":"2016-07-01"}'
+{"expense_id":1}
+$ curl localhost:9292/expenses --data '{"payee":"Starbucks", "amount":7.5,  ↩
+"date":"2016-07-01"}'
+{"expense_id":2}
+$ curl localhost:9292/expenses/2016-07-01
+[{"id":1,"payee":"Zoo","amount":10.0,"date":"2016-07-01"},{"id":2,"payee":"St
+arbucks","amount":7.5,"date":"2016-07-01"}]

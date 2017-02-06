@@ -1,0 +1,17 @@
+$ bundle exec rackup
+[2017-01-29 21:46:47] INFO  WEBrick 1.3.1
+[2017-01-29 21:46:47] INFO  ruby 2.4.0 (2016-12-24) [x86_64-darwin15]
+[2017-01-29 21:46:47] INFO  WEBrick::HTTPServer#start: pid=48561 port=9292
+2017-01-29 21:46:47 - NameError - uninitialized constant                    ↩
+ExpenseTracker::Ledger::DB:
+    /Users/myron/book/rspec3/Book/tmp/expense_tracker/app/ledger.rb:17:in   ↩
+    `expenses_on'
+    /Users/myron/book/rspec3/Book/tmp/expense_tracker/app/api.rb:25:in      ↩
+    `block in <class:API>'
+
+<literal:elide> truncated </literal:elide>
+
+::1 - - [29/Jan/2017:21:46:47 -0800] "GET /expenses/2016-07-01 HTTP/1.1" 500↩
+6638 0.0014
+[2017-01-29 21:46:47] INFO  going to shutdown ...
+[2017-01-29 21:46:47] INFO  WEBrick::HTTPServer#start done.

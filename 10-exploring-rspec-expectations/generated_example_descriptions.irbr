@@ -1,0 +1,11 @@
+>> require 'rspec/expectations'
+=> true
+>> include RSpec::Matchers
+=> Object
+
+>> start_with(1).description
+=> "start with 1"
+>> (start_with(1) & end_with(9)).description
+=> "start with 1 and end with 9"
+>> contain_exactly( a_string_starting_with(1) & ending_with(9) ).description
+=> "contain exactly (a string starting with 1 and ending with 9)"

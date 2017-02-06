@@ -1,0 +1,43 @@
+>> require 'rspec/expectations'
+=> true
+>> include RSpec::Matchers
+=> Object
+
+>> /^\[warn\] / === '[warn] Disk space low'
+=> true
+>> /^\[warn\] / === '[error] Out of memory'
+=> false
+>> (1..10) === 5
+=> true
+>> (1..10) === 15
+=> false
+
+>> def describe_value(value)
+>>   case value
+>>   when be_within(0.1).of(Math::PI) then 'Pi'
+>>   when be_within(0.1).of(2 * Math::PI) then 'Double Pi'
+>>   end
+>> end
+=> :describe_value
+>> describe_value(3.14159)
+=> "Pi"
+>> describe_value(6.28319)
+=> "Double Pi"
+
+>> numbers = [3.14159, 1.734, 4.273]
+=> [3.14159, 1.734, 4.273]
+>> expect(numbers).to start_with( be_within(0.1).of(Math::PI) )
+=> true
+
+>> expect([]).to start_with( be_within(0.1).of(Math::PI) )
+RSpec::Expectations::ExpectationNotMetError: expected [] to start with be   ↩
+within 0.1 of 3.141592653589793
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> expect([]).to start_with( a_value_within(0.1).of(Math::PI) )
+RSpec::Expectations::ExpectationNotMetError: expected [] to start with a    ↩
+value within 0.1 of 3.141592653589793
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> expect([Math::PI]).to start_with a_value_within(0.1).of Math::PI
+=> true

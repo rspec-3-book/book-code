@@ -1,0 +1,3 @@
+$ grep config/sequel -r . --exclude-dir=.git
+./spec/integration/app/ledger_spec.rb:require_relative '../../../config     ↩
+/sequel'

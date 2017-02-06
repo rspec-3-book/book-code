@@ -1,0 +1,2 @@
+$ curl localhost:9292/expenses/2016-07-01
+[]

@@ -1,0 +1,17 @@
+>> require 'rspec/mocks/standalone'
+=> true
+>> random = double('Random')
+=> #<Double "Random">
+
+>> allow(random).to receive(:rand).and_return(0.1, 0.2, 0.3)
+=> #<RSpec::Mocks::MessageExpectation #<Double "Random">.rand(any arguments)>
+>> random.rand
+=> 0.1
+>> random.rand
+=> 0.2
+>> random.rand
+=> 0.3
+>> random.rand
+=> 0.3
+>> random.rand
+=> 0.3
