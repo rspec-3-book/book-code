@@ -11,7 +11,7 @@ Failures:
      [31m[0m
      [31mNameError:[0m
      [31m  undefined local variable or method `app' for                         ↩
-       #<RSpec::ExampleGroups::ExpenseTrackerAPI:0x007fd6da05bb68>[0m
+       #<RSpec::ExampleGroups::ExpenseTrackerAPI:0x007fef0404f560>[0m
 
 <literal:elide> truncated </literal:elide>
 </ansii>

@@ -10,7 +10,7 @@ Using diff-lcs 1.3
 [32mInstalling rack 1.6.5[0m
 Using rspec-support 3.6.0.beta2
 [32mInstalling tilt 2.0.6[0m
-Using bundler 1.14.3
+Using bundler 1.14.5
 [32mInstalling rack-protection 1.5.3[0m
 [32mInstalling rack-test 0.6.3[0m
 Using rspec-core 3.6.0.beta2

@@ -12,15 +12,15 @@ status)
      [33mFailure/Error: [0m[32mexpect[0m(expenses).to contain_exactly(coffee, zoo)[0m
      [33m[0m
      [33m  expected collection contained:  [{"payee"=>"Starbucks",              ↩
-       "amount"=>5.75, "date"=>"2014-10-17", "id"=>42}, {"payee"=>"Zoo",    ↩
-       "amount"=>15.25, "date"=>"2014-10-17", "id"=>42}][0m
+       "amount"=>5.75, "date"=>"2017-06-10", "id"=>42}, {"payee"=>"Zoo",    ↩
+       "amount"=>15.25, "date"=>"2017-06-10", "id"=>42}][0m
      [33m  actual collection contained:    [][0m
      [33m  the missing elements were:      [{"payee"=>"Starbucks",              ↩
-       "amount"=>5.75, "date"=>"2014-10-17", "id"=>42}, {"payee"=>"Zoo",    ↩
-       "amount"=>15.25, "date"=>"2014-10-17", "id"=>42}][0m
+       "amount"=>5.75, "date"=>"2017-06-10", "id"=>42}, {"payee"=>"Zoo",    ↩
+       "amount"=>15.25, "date"=>"2017-06-10", "id"=>42}][0m
      [36m# ./spec/acceptance/expense_tracker_api_spec.rb:46:in `block (2 levels)↩
      in <module:ExpenseTracker>'[0m
 
-Finished in 0.03088 seconds (files took 0.10195 seconds to load)
+Finished in 0.0417 seconds (files took 0.15817 seconds to load)
 [33m1 example, 0 failures, 1 pending[0m
 </ansii>

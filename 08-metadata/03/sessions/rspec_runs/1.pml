@@ -4,6 +4,6 @@
 $ rspec spec/metadata_spec.rb
 [32m.[0m
 
-Finished in 0.00167 seconds (files took 0.08177 seconds to load)
+Finished in 0.00131 seconds (files took 0.08065 seconds to load)
 [32m1 example, 0 failures[0m
 </ansii>

@@ -19,7 +19,7 @@ Failures:
      [31m  (compared using ==)[0m
      [36m# ./spec/coffee_spec.rb:26:in `block (3 levels) in <top (required)>'[0m
 
-Finished in 0.01103 seconds (files took 0.09324 seconds to load)
+Finished in 0.01014 seconds (files took 0.08249 seconds to load)
 [31m1 example, 1 failure[0m
 
 Failed examples:

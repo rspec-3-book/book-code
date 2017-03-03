@@ -9,8 +9,8 @@
 >>   Date :date
 >> end
 => nil
->> DB[:expenses].insert(payee: 'Starbucks', amount: 5.75, date: '2014-10-17')
+>> DB[:expenses].insert(payee: 'Starbucks', amount: 5.75, date: '2017-06-10')
 => 1
 >> DB[:expenses].all
-=> [{:id=>1, :payee=>"Starbucks", :amount=>5.75, :date=>#<Date: 2014-10-17  ↩
-((2456948j,0s,0n),+0s,2299161j)>}]
+=> [{:id=>1, :payee=>"Starbucks", :amount=>5.75, :date=>#<Date: 2017-06-10  ↩
+((2457915j,0s,0n),+0s,2299161j)>}]

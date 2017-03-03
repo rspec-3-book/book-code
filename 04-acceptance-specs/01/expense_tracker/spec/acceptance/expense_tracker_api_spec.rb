@@ -9,7 +9,7 @@ module ExpenseTracker
       coffee = {
         'payee'  => 'Starbucks',
         'amount' => 5.75,
-        'date'   => '2014-10-17'
+        'date'   => '2017-06-10'
       }
 
       post '/expenses', JSON.generate(coffee)

@@ -5,18 +5,18 @@ RSpec.describe '`have_a_balance_of(amount)`' do
   let(:account) { Account.new('Checking') }
 
   before do
-    account.expenses << Expense.new(Date.new(2016, 12, 10), 10)
-    account.expenses << Expense.new(Date.new(2016, 12, 15), 20)
+    account.expenses << Expense.new(Date.new(2017, 6, 10), 10)
+    account.expenses << Expense.new(Date.new(2017, 6, 15), 20)
   end
 
   it 'passes when the balances match' do
     expect(account).to have_a_balance_of(30)
     # or
-    expect(account).to have_a_balance_of(10).as_of(Date.new(2016, 12, 12))
+    expect(account).to have_a_balance_of(10).as_of(Date.new(2017, 6, 12))
   end
 
   it 'fails when the balance as of a date does not match' do
-    expect(account).to have_a_balance_of(15).as_of(Date.new(2016, 12, 12))
+    expect(account).to have_a_balance_of(15).as_of(Date.new(2017, 6, 12))
   end
 
   it 'can be used in a compound expression' do

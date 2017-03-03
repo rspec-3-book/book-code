@@ -30,7 +30,7 @@ Failures:
      [31m  [0m[0m
      [36m# ./tokenizer_spec.rb:18:in `block (2 levels) in <top (required)>'[0m
 
-Finished in 0.01154 seconds (files took 0.08591 seconds to load)
+Finished in 0.01066 seconds (files took 0.08238 seconds to load)
 [31m1 example, 1 failure[0m
 
 Failed examples:

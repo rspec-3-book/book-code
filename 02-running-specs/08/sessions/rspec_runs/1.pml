@@ -5,6 +5,6 @@ $ rspec
 Run options: include {:focus=>true}
 [32m.[0m
 
-Finished in 0.00102 seconds (files took 0.08238 seconds to load)
+Finished in 0.00087 seconds (files took 0.0791 seconds to load)
 [32m1 example, 0 failures[0m
 </ansii>

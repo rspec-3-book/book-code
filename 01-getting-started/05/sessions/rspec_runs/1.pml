@@ -4,6 +4,6 @@
 $ rspec 
 [32m.[0m[32m.[0m
 
-Finished in 0.00239 seconds (files took 0.07676 seconds to load)
+Finished in 0.00206 seconds (files took 0.08537 seconds to load)
 [32m2 examples, 0 failures[0m
 </ansii>

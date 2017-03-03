@@ -7,6 +7,6 @@ CookieRecipe#ingredients
 [32m  should include :butter, :milk, and :eggs[0m
 [32m  should not include :fish_oil[0m
 
-Finished in 0.00179 seconds (files took 0.08857 seconds to load)
+Finished in 0.0015 seconds (files took 0.07951 seconds to load)
 [32m2 examples, 0 failures[0m
 </ansii>

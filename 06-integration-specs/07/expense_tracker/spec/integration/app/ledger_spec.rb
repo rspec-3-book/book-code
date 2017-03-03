@@ -9,7 +9,7 @@ module ExpenseTracker
       {
         'payee'  => 'Starbucks',
         'amount' => 5.75,
-        'date'   => '2014-10-17'
+        'date'   => '2017-06-10'
       }
     end
 
@@ -25,7 +25,7 @@ module ExpenseTracker
             id: result.expense_id,
             payee: 'Starbucks',
             amount: 5.75,
-            date: Date.iso8601('2014-10-17')
+            date: Date.iso8601('2017-06-10')
           )]
         end
       end

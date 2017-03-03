@@ -4,7 +4,7 @@
 $ bundle exec rspec --seed 32043
 <literal:elide> truncated </literal:elide>
 
-Finished in 0.06275 seconds (files took 0.19063 seconds to load)
+Finished in 0.05941 seconds (files took 0.22746 seconds to load)
 [31m11 examples, 2 failures, 1 pending[0m
 
 Failed examples:

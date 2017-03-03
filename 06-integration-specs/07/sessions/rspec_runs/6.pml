@@ -12,7 +12,7 @@ Randomized with seed 32043
 
 <literal:elide> truncated </literal:elide>
 
-Finished in 0.04946 seconds (files took 0.19391 seconds to load)
+Finished in 0.0485 seconds (files took 0.21859 seconds to load)
 [31m3 examples, 2 failures, 1 pending[0m
 
 Failed examples:

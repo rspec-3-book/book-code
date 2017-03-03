@@ -15,7 +15,7 @@ ExpenseTracker::Ledger
 [32m    returns all expenses with the provided date[0m
 [32m    returns a blank array when there are no matching expenses[0m
 
-Finished in 0.01828 seconds (files took 0.15039 seconds to load)
+Finished in 0.01832 seconds (files took 0.16797 seconds to load)
 [32m4 examples, 0 failures[0m
 
 Randomized with seed 22267

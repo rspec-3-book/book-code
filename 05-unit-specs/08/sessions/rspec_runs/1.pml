@@ -7,7 +7,7 @@ $ bundle exec rspec spec/unit/app/api_spec.rb
 Failures:
 
   1) ExpenseTracker::API POST /expenses when the expense is successfully    ↩
-  recorded responds with a 200 (OK)
+  recorded returns the expense id
      [31mFailure/Error:[0m
      [31m  [0m[32mallow[0m(ledger).to receive([33m:record[0m)[0m
      [31m    [0m.with(expense)[0m
@@ -20,19 +20,19 @@ Failures:
 
 <literal:elide> truncated </literal:elide>
 
-Finished in 0.00604 seconds (files took 0.1093 seconds to load)
+Finished in 0.00783 seconds (files took 0.13142 seconds to load)
 [31m4 examples, 4 failures[0m
 
 Failed examples:
 
 [31mrspec ./spec/unit/app/api_spec.rb:20[0m [36m# ExpenseTracker::API POST /expenses   ↩
-when the expense is successfully recorded responds with a 200 (OK)[0m
-[31mrspec ./spec/unit/app/api_spec.rb:25[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense is successfully recorded returns the expense id[0m
-[31mrspec ./spec/unit/app/api_spec.rb:47[0m [36m# ExpenseTracker::API POST /expenses   ↩
-when the expense fails validation returns an error message[0m
-[31mrspec ./spec/unit/app/api_spec.rb:42[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:27[0m [36m# ExpenseTracker::API POST /expenses   ↩
+when the expense is successfully recorded responds with a 200 (OK)[0m
+[31mrspec ./spec/unit/app/api_spec.rb:49[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense fails validation responds with a 422 (Unprocessable entity)[0m
+[31mrspec ./spec/unit/app/api_spec.rb:42[0m [36m# ExpenseTracker::API POST /expenses   ↩
+when the expense fails validation returns an error message[0m
 
 Randomized with seed 40684
 </ansii>

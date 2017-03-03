@@ -22,7 +22,7 @@ Failures:
           [36m# ./spec/integration/app/ledger_spec.rb:25:in `block (4 levels) in↩
           <module:ExpenseTracker>'[0m
 
-Finished in 0.02638 seconds (files took 0.15521 seconds to load)
+Finished in 0.02142 seconds (files took 0.15952 seconds to load)
 [31m1 example, 1 failure[0m
 
 Failed examples:

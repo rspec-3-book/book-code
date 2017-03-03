@@ -1,4 +1,4 @@
-$ curl localhost:9292/expenses/2016-07-01
+$ curl localhost:9292/expenses/2017-06-10 -w "\n"
 NameError: uninitialized constant ExpenseTracker::Ledger::DB
     /Users/myron/book/rspec3/Book/tmp/expense_tracker/app/ledger.rb:17:in   ↩
     `expenses_on'

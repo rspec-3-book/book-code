@@ -4,7 +4,7 @@
 $ bundle exec rspec 
 <literal:elide> truncated </literal:elide>
 
-Finished in 0.06619 seconds (files took 0.17996 seconds to load)
+Finished in 0.06926 seconds (files took 0.21812 seconds to load)
 [31m11 examples, 2 failures, 1 pending[0m
 
 Failed examples:

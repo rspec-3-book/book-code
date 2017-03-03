@@ -9,6 +9,6 @@ Key-value stores
 [32m  allows you to get previously stored values[0m
 [32m  raises a KeyError when you fetch an unknown key[0m
 
-Finished in 0.00546 seconds (files took 0.10048 seconds to load)
+Finished in 0.00356 seconds (files took 0.09346 seconds to load)
 [32m4 examples, 0 failures[0m
 </ansii>

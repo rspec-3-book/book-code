@@ -16,7 +16,7 @@ Failures:
 
 <literal:elide> truncated </literal:elide>
 
-Finished in 0.03135 seconds (files took 0.18403 seconds to load)
+Finished in 0.02597 seconds (files took 0.18213 seconds to load)
 [31m2 examples, 2 failures[0m
 
 Failed examples:

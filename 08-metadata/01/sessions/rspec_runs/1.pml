@@ -17,8 +17,8 @@ $ rspec spec/metadata_spec.rb
  :rerun_file_path=>"./spec/metadata_spec.rb",
  :scoped_id=>"1:1",
  :execution_result=>
-  #<RSpec::Core::Example::ExecutionResult:0x007fdf8d2a1dd0
-   @started_at=2017-01-24 09:22:57 -0800>,
+  #<RSpec::Core::Example::ExecutionResult:0x007fe11301bbb0
+   @started_at=2017-03-02 20:07:28 -0800>,
  :example_group=>
   {:block=>
     #<Proc:0x007fdf8bb24ce8@/Users/myron/book/rspec3/Book/tmp/metadata/spec ↩
@@ -30,6 +30,6 @@ $ rspec spec/metadata_spec.rb
  :last_run_status=>"unknown"}
 [32m.[0m
 
-Finished in 0.00218 seconds (files took 0.09717 seconds to load)
+Finished in 0.00169 seconds (files took 0.08984 seconds to load)
 [32m1 example, 0 failures[0m
 </ansii>

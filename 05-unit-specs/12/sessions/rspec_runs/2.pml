@@ -8,18 +8,18 @@ Randomized with seed 14192
 ExpenseTracker::API
   GET /expenses/:date
     when expenses exist on the given date
+[32m      responds with a 200 (OK)[0m
 [31m      returns the expense records as JSON (FAILED - 1)[0m
-[32m      responds with a 200[0m
     when there are no expenses on the given date
-[32m      responds with a 200[0m
 [32m      returns an empty array as JSON[0m
+[32m      responds with a 200 (OK)[0m
   POST /expenses
     when the expense fails validation
-[32m      responds with a 422 (Unprocessable entity)[0m
 [32m      returns an error message[0m
+[32m      responds with a 422 (Unprocessable entity)[0m
     when the expense is successfully recorded
-[32m      responds with a 200 (OK)[0m
 [32m      returns the expense id[0m
+[32m      responds with a 200 (OK)[0m
 
 Failures:
 
@@ -31,15 +31,15 @@ Failures:
      [31m       got: [][0m
      [31m[0m
      [31m  (compared using ==)[0m
-     [36m# ./spec/unit/app/api_spec.rb:73:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:68:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
-Finished in 0.03862 seconds (files took 0.11045 seconds to load)
+Finished in 0.04087 seconds (files took 0.1367 seconds to load)
 [31m8 examples, 1 failure[0m
 
 Failed examples:
 
-[31mrspec ./spec/unit/app/api_spec.rb:69[0m [36m# ExpenseTracker::API GET              ↩
+[31mrspec ./spec/unit/app/api_spec.rb:64[0m [36m# ExpenseTracker::API GET              ↩
 /expenses/:date when expenses exist on the given date returns the expense   ↩
 records as JSON[0m
 

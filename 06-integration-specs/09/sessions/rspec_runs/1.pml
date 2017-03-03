@@ -19,7 +19,7 @@ Failures:
 
   1) ExpenseTracker::Ledger#expenses_on returns a blank array when there are↩
   no matching expenses
-     [31mFailure/Error: [0m[32mexpect[0m(ledger.expenses_on([31m[1;31m'[0m[31m2015-12-10[1;31m'[0m[31m[0m)).to eq([])[0m
+     [31mFailure/Error: [0m[32mexpect[0m(ledger.expenses_on([31m[1;31m'[0m[31m2017-06-10[1;31m'[0m[31m[0m)).to eq([])[0m
      [31m[0m
      [31m  expected: [][0m
      [31m       got: nil[0m
@@ -33,7 +33,7 @@ Failures:
   2) ExpenseTracker::Ledger#expenses_on returns all expenses with the       ↩
   provided date
      [31mFailure/Error:[0m
-     [31m  [0m[32mexpect[0m(ledger.expenses_on([31m[1;31m'[0m[31m2015-12-10[1;31m'[0m[31m[0m)).to contain_exactly([0m
+     [31m  [0m[32mexpect[0m(ledger.expenses_on([31m[1;31m'[0m[31m2017-06-10[1;31m'[0m[31m[0m)).to contain_exactly([0m
      [31m    [0ma_hash_including([35mid[0m: result_1.expense_id),[0m
      [31m    [0ma_hash_including([35mid[0m: result_2.expense_id)[0m
      [31m  [0m)[0m
@@ -45,7 +45,7 @@ Failures:
      [36m# ./spec/support/db.rb:9:in `block (3 levels) in <top (required)>'[0m
      [36m# ./spec/support/db.rb:9:in `block (2 levels) in <top (required)>'[0m
 
-Finished in 0.03519 seconds (files took 0.15164 seconds to load)
+Finished in 0.02766 seconds (files took 0.16616 seconds to load)
 [31m4 examples, 2 failures[0m
 
 Failed examples:

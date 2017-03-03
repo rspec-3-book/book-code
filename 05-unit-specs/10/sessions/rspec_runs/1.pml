@@ -4,7 +4,7 @@
 $ bundle exec rspec spec/unit/app/api_spec.rb
 <literal:elide> truncated </literal:elide>
 
-Finished in 0.02781 seconds (files took 0.10983 seconds to load)
+Finished in 0.02729 seconds (files took 0.13823 seconds to load)
 [32m4 examples, 0 failures[0m
 
 Randomized with seed 13686

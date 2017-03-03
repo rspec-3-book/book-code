@@ -11,7 +11,7 @@ Failures:
      [31m  expected `[].empty?` to return false, got true[0m
      [36m# ./spec/sandwich_spec.rb:14:in `block (2 levels) in <top (required)>'[0m
 
-Finished in 0.01222 seconds (files took 0.09061 seconds to load)
+Finished in 0.0116 seconds (files took 0.08146 seconds to load)
 [31m2 examples, 1 failure[0m
 
 Failed examples:

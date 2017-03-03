@@ -12,7 +12,7 @@ Using rspec-support 3.6.0.beta2
 [32mInstalling sequel 4.42.1[0m
 Using tilt 2.0.6
 [32mInstalling sqlite3 1.3.13 with native extensions[0m
-Using bundler 1.14.3
+Using bundler 1.14.5
 Using rack-protection 1.5.3
 Using rack-test 0.6.3
 Using rspec-core 3.6.0.beta2

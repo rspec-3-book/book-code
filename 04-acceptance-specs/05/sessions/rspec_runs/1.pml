@@ -4,6 +4,6 @@
 $ bundle exec rspec
 [32m.[0m
 
-Finished in 0.01759 seconds (files took 0.09885 seconds to load)
+Finished in 0.01998 seconds (files took 0.13262 seconds to load)
 [32m1 example, 0 failures[0m
 </ansii>

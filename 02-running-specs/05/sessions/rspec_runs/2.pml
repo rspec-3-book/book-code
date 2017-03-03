@@ -7,6 +7,9 @@ Run options: include {:locations=>{"./spec/coffee_spec.rb"=>[25]}}
 
 <literal:elide> truncated </literal:elide>
 
+[31m1 example, 1 failure[0m
+
+Failed examples:
 
 [31mrspec ./spec/coffee_spec.rb:25[0m [36m# A cup of coffee with milk costs $1.25[0m
 </ansii>

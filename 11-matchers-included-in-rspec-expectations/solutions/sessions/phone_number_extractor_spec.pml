@@ -21,7 +21,7 @@ Failures:
      [36m# ./phone_number_extractor_spec.rb:18:in `block (2 levels) in <top     ↩
      (required)>'[0m
 
-Finished in 0.01172 seconds (files took 0.08125 seconds to load)
+Finished in 0.01066 seconds (files took 0.08066 seconds to load)
 [31m1 example, 1 failure[0m
 
 Failed examples:

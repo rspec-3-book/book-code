@@ -5,8 +5,8 @@ RSpec.describe '`have_a_balance_of(amount)`' do
   let(:account) { Account.new('Checking') }
 
   before do
-    account.expenses << Expense.new(Date.new(2016, 12, 10), 10)
-    account.expenses << Expense.new(Date.new(2016, 12, 15), 20)
+    account.expenses << Expense.new(Date.new(2017, 6, 10), 10)
+    account.expenses << Expense.new(Date.new(2017, 6, 15), 20)
   end
 
   it 'passes when the balance matches' do

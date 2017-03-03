@@ -7,7 +7,7 @@ Calendar = Struct.new(:date_string) do
 end
 
 RSpec.describe Calendar do
-  let(:sunday_date) { Calendar.new('Sun, 14 Feb 2016') }
+  let(:sunday_date) { Calendar.new('Sun, 11 Jun 2017') }
 
   it 'considers sundays to be on the weekend' do
     expect(sunday_date).to be_on_weekend

@@ -13,17 +13,6 @@ module ExpenseTracker
       context 'when the expense is successfully recorded' do
         # ... specs go here ...
 
-        it 'responds with a 200 (OK)' do
-          expense = { 'some' => 'data' }
-
-          allow(ledger).to receive(:record)
-            .with(expense)
-            .and_return(RecordResult.new(true, 417, nil))
-
-          post '/expenses', JSON.generate(expense)
-          expect(last_response.status).to eq(200)
-        end
-
         it 'returns the expense id' do
           expense = { 'some' => 'data' }
 
@@ -36,12 +25,23 @@ module ExpenseTracker
           parsed = JSON.parse(last_response.body)
           expect(parsed).to include('expense_id' => 417)
         end
+
+        it 'responds with a 200 (OK)' do
+          expense = { 'some' => 'data' }
+
+          allow(ledger).to receive(:record)
+            .with(expense)
+            .and_return(RecordResult.new(true, 417, nil))
+
+          post '/expenses', JSON.generate(expense)
+          expect(last_response.status).to eq(200)
+        end
       end
 
       context 'when the expense fails validation' do
         # ... specs go here ...
-        it 'responds with a 422 (Unprocessable entity)'
         it 'returns an error message'
+        it 'responds with a 422 (Unprocessable entity)'
       end
     end
   end

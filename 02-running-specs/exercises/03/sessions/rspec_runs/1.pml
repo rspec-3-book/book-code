@@ -5,6 +5,6 @@ $ rspec --next-failure
 Run options: include {:last_run_status=>"failed"}
 [32m.[0m
 
-Finished in 0.00171 seconds (files took 0.08269 seconds to load)
+Finished in 0.00168 seconds (files took 0.08264 seconds to load)
 [32m1 example, 0 failures[0m
 </ansii>

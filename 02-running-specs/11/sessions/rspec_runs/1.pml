@@ -16,7 +16,7 @@ Failures:
      was raised.[0m
      [36m# ./spec/coffee_spec.rb:47[0m
 
-Finished in 0.00307 seconds (files took 0.09231 seconds to load)
+Finished in 0.00293 seconds (files took 0.08214 seconds to load)
 [31m4 examples, 2 failures[0m
 
 Failed examples:

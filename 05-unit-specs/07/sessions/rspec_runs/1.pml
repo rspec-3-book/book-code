@@ -8,13 +8,13 @@ Randomized with seed 33950
 ExpenseTracker::API
   POST /expenses
     when the expense is successfully recorded
-[32m      responds with a 200 (OK)[0m
 [32m      returns the expense id[0m
+[32m      responds with a 200 (OK)[0m
     when the expense fails validation
-[32m      responds with a 422 (Unprocessable entity)[0m
 [32m      returns an error message[0m
+[32m      responds with a 422 (Unprocessable entity)[0m
 
-Finished in 0.02503 seconds (files took 0.10503 seconds to load)
+Finished in 0.03014 seconds (files took 0.14299 seconds to load)
 [32m4 examples, 0 failures[0m
 
 Randomized with seed 33950

@@ -1,4 +1,3 @@
-Sandwich = Struct.new(:taste, :toppings)
 
 RSpec.describe 'An ideal sandwich' do
   it 'is delicious' do
