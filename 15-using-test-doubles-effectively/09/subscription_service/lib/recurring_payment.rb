@@ -1,9 +1,9 @@
 require 'cash_cow'
 
 class RecurringPayment
-  def self.process_subscriptions(subscriptions)
+  def self.process_subscriptions(subscriptions, bank: CashCow)
     subscriptions.each do |subscription|
-      CashCow.charge_card(subscription.credit_card, subscription.amount)
+      bank.charge_card(subscription.credit_card, subscription.amount)
       # ...send receipt and other stuff...
     end
   end

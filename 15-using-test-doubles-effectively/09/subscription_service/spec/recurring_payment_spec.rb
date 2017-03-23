@@ -13,9 +13,10 @@ RSpec.describe RecurringPayment do
       Subscription.new('Jane Doe', card_2, 29.99)
     ]
 
-    expect(CashCow).to receive(:charge_card).with(card_1, 19.99, :excess_arg)
-    expect(CashCow).to receive(:charge_card).with(card_2, 29.99, :excess_arg)
+    bank = class_double(CashCow)
+    expect(bank).to receive(:charge_card).with(card_1, 19.99)
+    expect(bank).to receive(:charge_card).with(card_2, 29.99)
 
-    RecurringPayment.process_subscriptions(subscriptions)
+    RecurringPayment.process_subscriptions(subscriptions, bank: bank)
   end
 end
