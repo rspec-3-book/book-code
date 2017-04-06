@@ -17,11 +17,11 @@ $ rspec spec/metadata_spec.rb
  :rerun_file_path=>"./spec/metadata_spec.rb",
  :scoped_id=>"1:1",
  :execution_result=>
-  #<RSpec::Core::Example::ExecutionResult:0x007fe11301bbb0
-   @started_at=2017-03-02 20:07:28 -0800>,
+  #<RSpec::Core::Example::ExecutionResult:0x007fe579023d50
+   @started_at=2017-03-23 10:02:11 -0700>,
  :example_group=>
   {:block=>
-    #<Proc:0x007fdf8bb24ce8@/Users/myron/book/rspec3/Book/tmp/metadata/spec ↩
+    #<Proc:0x007fe579078aa8@/Users/myron/book/rspec3/Book/tmp/metadata/spec ↩
     /metadata_spec.rb:3>,
 
 <literal:elide> truncated </literal:elide>

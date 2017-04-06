@@ -17,7 +17,7 @@ ExpenseTracker::API
 
 <literal:elide> truncated </literal:elide>
 
-Finished in 0.0379 seconds (files took 0.18205 seconds to load)
+Finished in 0.03161 seconds (files took 0.14705 seconds to load)
 [33m4 examples, 0 failures, 2 pending[0m
 
 Randomized with seed 55289

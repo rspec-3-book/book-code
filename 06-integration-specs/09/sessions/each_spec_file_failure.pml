@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>  <!-- -*- xml -*- -->
 <!DOCTYPE chapter SYSTEM "local/xml/markup.dtd">
 <ansii>
-$ (for f in `find spec -iname '*_spec.rb'`; do echo "$f:"; bundle exec rspec↩
-$f -fp || exit 1; done)
+$ for f in `find spec -iname '*_spec.rb'`
+  do
+    echo "$f:"
+    bundle exec rspec $f -fp || exit 1
+  done
 spec/acceptance/expense_tracker_api_spec.rb:
 
 Randomized with seed 32955

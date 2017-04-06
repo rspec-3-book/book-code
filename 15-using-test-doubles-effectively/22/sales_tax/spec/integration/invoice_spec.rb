@@ -7,7 +7,7 @@ RSpec.describe Invoice do
   it 'calculates the total' do
     invoice = Invoice.new(address, items)
 
-    # Seattle's tax rate is 9.6%
-    expect(invoice.calculate_total).to eq(109.60)
+    # Seattle's tax rate is 10.1%
+    expect(invoice.calculate_total).to eq(110.10)
   end
 end

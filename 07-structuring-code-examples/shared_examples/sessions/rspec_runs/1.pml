@@ -8,6 +8,6 @@ HashKVStore
 [32m    allows you to get previously stored values[0m
 [32m    raises a KeyError when you fetch an unknown key[0m
 
-Finished in 0.00259 seconds (files took 0.11079 seconds to load)
+Finished in 0.00248 seconds (files took 0.0888 seconds to load)
 [32m2 examples, 0 failures[0m
 </ansii>
