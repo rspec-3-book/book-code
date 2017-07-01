@@ -7,12 +7,12 @@ $ rspec
 Failures:
 
   1) A cup of coffee with milk is light in color FIXED
-     [34mExpected pending 'Color not implemented yet' to fail. No Error was     ↩
+     [34mExpected pending 'Color not implemented yet' to fail. No error was     ↩
      raised.[0m
      [36m# ./spec/coffee_spec.rb:42[0m
 
   2) A cup of coffee with milk is cooler than 200 degrees Fahrenheit FIXED
-     [34mExpected pending 'Temperature not implemented yet' to fail. No Error   ↩
+     [34mExpected pending 'Temperature not implemented yet' to fail. No error   ↩
      was raised.[0m
      [36m# ./spec/coffee_spec.rb:47[0m
 

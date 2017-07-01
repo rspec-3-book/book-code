@@ -1,0 +1,31 @@
+>> require 'rspec/expectations'
+=> true
+>> include RSpec::Matchers
+=> Object
+
+>> RSpec::Matchers.alias_matcher :an_admin, :be_an_admin
+=> :an_admin
+
+>> be_an_admin.description
+=> "be an admin"
+>> an_admin.description
+=> "an admin"
+
+>> RSpec::Matchers.alias_matcher :an_admin, :be_an_admin do |old_description|
+>>   old_description.sub('be an admin', 'a superuser')
+>> end
+=> :an_admin
+
+>> an_admin.description
+=> "a superuser"
+
+>> adverb = 'absolutely'
+=> "absolutely"
+
+>> expect(adverb).not_to start_with('a').and end_with('z')
+NotImplementedError: `expect(...).not_to matcher.and matcher` is not        ↩
+supported, since it creates a bit of an ambiguity. Instead, define negated  ↩
+versions of whatever matchers you wish to negate with                       ↩
+`RSpec::Matchers.define_negated_matcher` and use `expect(...).to            ↩
+matcher.and matcher`.
+    <literal:elide> backtrace truncated </literal:elide>

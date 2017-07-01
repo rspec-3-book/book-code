@@ -2,15 +2,11 @@
 => true
 >> DB = Sequel.sqlite
 => #<Sequel::SQLite::Database: {:adapter=>:sqlite}>
->> DB.create_table :expenses do
-?>   primary_key :id
->>   String :payee
->>   Float :amount
->>   Date :date
->> end
+>> DB.create_table(:gems) { String :name }
 => nil
->> DB[:expenses].insert(payee: 'Starbucks', amount: 5.75, date: '2017-06-10')
+>> DB[:gems].insert(name: 'rspec')
 => 1
->> DB[:expenses].all
-=> [{:id=>1, :payee=>"Starbucks", :amount=>5.75, :date=>#<Date: 2017-06-10  ↩
-((2457915j,0s,0n),+0s,2299161j)>}]
+>> DB[:gems].insert(name: 'sinatra')
+=> 2
+>> DB[:gems].all
+=> [{:name=>"rspec"}, {:name=>"sinatra"}]

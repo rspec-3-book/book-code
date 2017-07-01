@@ -8,8 +8,9 @@ RSpec.describe SalesTax do
     expect(rate).to be_a(Float).and be_between(0.01, 0.5)
   end
 
-  it 'returns nil if the tax rate cannot be found' do
-    rate = sales_tax.rate_for('00000')
-    expect(rate).to be_nil
+  it 'raises an error if the tax rate cannot be found' do
+    expect {
+      sales_tax.rate_for('00000')
+    }.to raise_error(SalesTax::RateUnavailableError)
   end
 end

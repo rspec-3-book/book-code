@@ -13,8 +13,8 @@ Failures:
      [31m       got: false[0m
      [31m[0m
      [31m  (compared using ==)[0m
-     [36m# ./spec/password_strength_validator_spec.rb:11:in `block (2 levels) in↩
-     <top (required)>'[0m
+     [36m# ./spec/password_strength_validator_spec.rb:11:in `block (2 levels)   ↩
+     in <top (required)>'[0m
 
 Finished in 0.01002 seconds (files took 0.08962 seconds to load)
 [31m2 examples, 1 failure[0m

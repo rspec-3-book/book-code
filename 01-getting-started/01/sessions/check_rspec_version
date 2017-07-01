@@ -1,6 +1,0 @@
-$ rspec --version
-RSpec 3.6.0.beta2
-  - rspec-core 3.6.0.beta2
-  - rspec-expectations 3.6.0.beta2
-  - rspec-mocks 3.6.0.beta2
-  - rspec-support 3.6.0.beta2

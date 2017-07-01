@@ -15,7 +15,7 @@ Failures:
      [31m[0m
      [31m  the ExpenseTracker::Ledger class does not implement the instance     ↩
        method: record[0m
-     [36m# ./spec/unit/app/api_spec.rb:15:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:19:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
 <literal:elide> truncated </literal:elide>
@@ -25,13 +25,13 @@ Finished in 0.00783 seconds (files took 0.13142 seconds to load)
 
 Failed examples:
 
-[31mrspec ./spec/unit/app/api_spec.rb:20[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:24[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense is successfully recorded returns the expense id[0m
-[31mrspec ./spec/unit/app/api_spec.rb:27[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:31[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense is successfully recorded responds with a 200 (OK)[0m
-[31mrspec ./spec/unit/app/api_spec.rb:49[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:53[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense fails validation responds with a 422 (Unprocessable entity)[0m
-[31mrspec ./spec/unit/app/api_spec.rb:42[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:46[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense fails validation returns an error message[0m
 
 Randomized with seed 40684

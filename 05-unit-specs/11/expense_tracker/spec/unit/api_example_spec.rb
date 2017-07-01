@@ -4,8 +4,12 @@ require 'rack/test'
 module ExpenseTracker
   RSpec.describe API do
     include Rack::Test::Methods
+
+    def app
+      API.new(ledger: ledger)
+    end
+
     let(:ledger) { instance_double('ExpenseTracker::Ledger') }
-    let(:app) { API.new(ledger: ledger) }
 
     describe 'POST /expenses' do
       context 'when the expense is successfully recorded' do

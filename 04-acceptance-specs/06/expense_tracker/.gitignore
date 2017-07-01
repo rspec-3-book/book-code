@@ -1,2 +1,5 @@
 spec/examples.txt
 db/*.db
+bin
+bundle
+log

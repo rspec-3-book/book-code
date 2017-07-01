@@ -14,7 +14,7 @@ ExpenseTracker::API
 [32m      returns an error message[0m
 [32m      responds with a 422 (Unprocessable entity)[0m
 
-Finished in 0.03014 seconds (files took 0.14299 seconds to load)
+Finished in 0.02529 seconds (files took 0.13831 seconds to load)
 [32m4 examples, 0 failures[0m
 
 Randomized with seed 33950

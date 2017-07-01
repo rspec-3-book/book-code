@@ -32,7 +32,7 @@ Failures:
      [31m[0m
      [31m  the ExpenseTracker::Ledger class does not implement the instance     ↩
        method: expenses_on[0m
-     [36m# ./spec/unit/app/api_spec.rb:59:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:63:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
   2) ExpenseTracker::API GET /expenses/:date when expenses exist on the     ↩
@@ -44,7 +44,7 @@ Failures:
      [31m[0m
      [31m  the ExpenseTracker::Ledger class does not implement the instance     ↩
        method: expenses_on[0m
-     [36m# ./spec/unit/app/api_spec.rb:59:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:63:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
   3) ExpenseTracker::API GET /expenses/:date when there are no expenses on  ↩
@@ -56,7 +56,7 @@ Failures:
      [31m[0m
      [31m  the ExpenseTracker::Ledger class does not implement the instance     ↩
        method: expenses_on[0m
-     [36m# ./spec/unit/app/api_spec.rb:79:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:83:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
   4) ExpenseTracker::API GET /expenses/:date when there are no expenses on  ↩
@@ -68,7 +68,7 @@ Failures:
      [31m[0m
      [31m  the ExpenseTracker::Ledger class does not implement the instance     ↩
        method: expenses_on[0m
-     [36m# ./spec/unit/app/api_spec.rb:79:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:83:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
 Finished in 0.02799 seconds (files took 0.14627 seconds to load)
@@ -76,18 +76,18 @@ Finished in 0.02799 seconds (files took 0.14627 seconds to load)
 
 Failed examples:
 
-[31mrspec ./spec/unit/app/api_spec.rb:71[0m [36m# ExpenseTracker::API GET              ↩
+[31mrspec ./spec/unit/app/api_spec.rb:75[0m [36m# ExpenseTracker::API GET              ↩
 /expenses/:date when expenses exist on the given date responds with a 200   ↩
 (OK)[0m
-[31mrspec ./spec/unit/app/api_spec.rb:64[0m [36m# ExpenseTracker::API GET              ↩
+[31mrspec ./spec/unit/app/api_spec.rb:68[0m [36m# ExpenseTracker::API GET              ↩
 /expenses/:date when expenses exist on the given date returns the expense   ↩
 records as JSON[0m
-[31mrspec ./spec/unit/app/api_spec.rb:84[0m [36m# ExpenseTracker::API GET              ↩
+[31mrspec ./spec/unit/app/api_spec.rb:88[0m [36m# ExpenseTracker::API GET              ↩
 /expenses/:date when there are no expenses on the given date returns an     ↩
 empty array as JSON[0m
-[31mrspec ./spec/unit/app/api_spec.rb:91[0m [36m# ExpenseTracker::API GET              ↩
-/expenses/:date when there are no expenses on the given date responds with a↩
-200 (OK)[0m
+[31mrspec ./spec/unit/app/api_spec.rb:95[0m [36m# ExpenseTracker::API GET              ↩
+/expenses/:date when there are no expenses on the given date responds with  ↩
+a 200 (OK)[0m
 
 Randomized with seed 59512
 </ansii>

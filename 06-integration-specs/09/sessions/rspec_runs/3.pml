@@ -9,7 +9,7 @@ Randomized with seed 21580
 Failures:
 
   1) Expense Tracker API records submitted expenses FIXED
-     [34mExpected pending 'Need to persist expenses' to fail. No Error was      ↩
+     [34mExpected pending 'Need to persist expenses' to fail. No error was      ↩
      raised.[0m
      [36m# ./spec/acceptance/expense_tracker_api_spec.rb:22[0m
 
@@ -18,8 +18,8 @@ Finished in 0.04844 seconds (files took 0.22185 seconds to load)
 
 Failed examples:
 
-[31mrspec ./spec/acceptance/expense_tracker_api_spec.rb:22[0m [36m# Expense Tracker API↩
-records submitted expenses[0m
+[31mrspec ./spec/acceptance/expense_tracker_api_spec.rb:22[0m [36m# Expense Tracker    ↩
+API records submitted expenses[0m
 
 Randomized with seed 21580
 </ansii>

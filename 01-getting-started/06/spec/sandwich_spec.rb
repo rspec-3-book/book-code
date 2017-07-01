@@ -6,11 +6,15 @@ RSpec.describe 'An ideal sandwich' do
   end
 
   it 'is delicious' do
-    expect(sandwich.taste).to eq('delicious')
+    taste = sandwich.taste
+
+    expect(taste).to eq('delicious')
   end
 
   it 'lets me add toppings' do
     sandwich.toppings << 'cheese'
-    expect(sandwich.toppings).not_to be_empty
+    toppings = sandwich.toppings
+
+    expect(toppings).not_to be_empty
   end
 end

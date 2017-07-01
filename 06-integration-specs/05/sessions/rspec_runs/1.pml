@@ -12,15 +12,15 @@ Failures:
 
      1.1) [31mFailure/Error: [0m[32mexpect[0m(result).to be_success[0m
           [31m  expected nil to respond to `success?`[0m
-          [36m# ./spec/integration/app/ledger_spec.rb:23:in `block (4 levels) in↩
-          <module:ExpenseTracker>'[0m
+          [36m# ./spec/integration/app/ledger_spec.rb:23:in `block (4 levels)   ↩
+          in <module:ExpenseTracker>'[0m
 
      1.2) [31mFailure/Error: [0m[35mid[0m: result.expense_id,[0m
           [31m[0m
           [31mNoMethodError:[0m
           [31m  undefined method `expense_id' for nil:NilClass[0m
-          [36m# ./spec/integration/app/ledger_spec.rb:25:in `block (4 levels) in↩
-          <module:ExpenseTracker>'[0m
+          [36m# ./spec/integration/app/ledger_spec.rb:25:in `block (4 levels)   ↩
+          in <module:ExpenseTracker>'[0m
 
 Finished in 0.02066 seconds (files took 0.15448 seconds to load)
 [31m1 example, 1 failure[0m

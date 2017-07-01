@@ -1,2 +1,0 @@
-$ bundle config --delete bin
-$ rails app:update:bin

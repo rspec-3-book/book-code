@@ -14,7 +14,7 @@ Failures:
      [31m       got: 404[0m
      [31m[0m
      [31m  (compared using ==)[0m
-     [36m# ./spec/unit/app/api_spec.rb:37:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:41:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
 Finished in 0.03479 seconds (files took 0.14115 seconds to load)
@@ -22,7 +22,7 @@ Finished in 0.03479 seconds (files took 0.14115 seconds to load)
 
 Failed examples:
 
-[31mrspec ./spec/unit/app/api_spec.rb:29[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:33[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense is successfully recorded responds with a 200 (OK)[0m
 
 Randomized with seed 32399

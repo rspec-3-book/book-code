@@ -31,7 +31,7 @@ Failures:
      [31m       got: [][0m
      [31m[0m
      [31m  (compared using ==)[0m
-     [36m# ./spec/unit/app/api_spec.rb:68:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:72:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
 Finished in 0.04087 seconds (files took 0.1367 seconds to load)
@@ -39,7 +39,7 @@ Finished in 0.04087 seconds (files took 0.1367 seconds to load)
 
 Failed examples:
 
-[31mrspec ./spec/unit/app/api_spec.rb:64[0m [36m# ExpenseTracker::API GET              ↩
+[31mrspec ./spec/unit/app/api_spec.rb:68[0m [36m# ExpenseTracker::API GET              ↩
 /expenses/:date when expenses exist on the given date returns the expense   ↩
 records as JSON[0m
 

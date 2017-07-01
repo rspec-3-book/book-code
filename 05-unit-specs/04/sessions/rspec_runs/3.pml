@@ -21,12 +21,12 @@ status)
   1) ExpenseTracker::API POST /expenses when the expense fails validation   ↩
   responds with a 422 (Unprocessable entity)[0m
      [36m# Not yet implemented[0m
-[36m     # ./spec/unit/app/api_spec.rb:44
+[36m     # ./spec/unit/app/api_spec.rb:48
 [0m[33m
   2) ExpenseTracker::API POST /expenses when the expense fails validation   ↩
   returns an error message[0m
      [36m# Not yet implemented[0m
-[36m     # ./spec/unit/app/api_spec.rb:43
+[36m     # ./spec/unit/app/api_spec.rb:47
 [0m
 
 Finished in 0.02685 seconds (files took 0.14003 seconds to load)

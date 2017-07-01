@@ -13,9 +13,6 @@ ENV['RACK_ENV'] = 'test'
 # the additional setup, and require it from the spec files that actually need
 # it.
 #
-# The `.rspec` file also contains a few flags that are not defaults but that
-# users commonly want.
-#
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 module ExpenseTrackerMatchers
   def an_expense_identified_by(id)
@@ -113,4 +110,14 @@ RSpec.configure do |config|
   # test failures related to randomization by passing the same `--seed` value
   # as the one that triggered the failure.
   Kernel.srand config.seed
+end
+
+RSpec.configure do |rspec|
+  rspec.alias_example_group_to :pdescribe, pry: true
+  rspec.alias_example_to :pit, pry: true
+
+  rspec.after(:example, pry: true) do |ex|
+    require 'pry'
+    binding.pry
+  end
 end

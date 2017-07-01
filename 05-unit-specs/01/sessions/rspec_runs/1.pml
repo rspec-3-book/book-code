@@ -22,8 +22,8 @@ status)
      [33m  the missing elements were:      [{"payee"=>"Starbucks",              ↩
        "amount"=>5.75, "date"=>"2017-06-10", "id"=>42}, {"payee"=>"Zoo",    ↩
        "amount"=>15.25, "date"=>"2017-06-10", "id"=>42}][0m
-     [36m# ./spec/acceptance/expense_tracker_api_spec.rb:46:in `block (2 levels)↩
-     in <module:ExpenseTracker>'[0m
+     [36m# ./spec/acceptance/expense_tracker_api_spec.rb:46:in `block (2        ↩
+     levels) in <module:ExpenseTracker>'[0m
 
 Finished in 0.02935 seconds (files took 0.1425 seconds to load)
 [33m1 example, 0 failures, 1 pending[0m

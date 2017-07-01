@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>  <!-- -*- xml -*- -->
 <!DOCTYPE chapter SYSTEM "local/xml/markup.dtd">
 <ansii>
-$ bundle exec rspec --seed 62270
+$ bundle exec rspec --seed 32043
 <literal:elide> truncated </literal:elide>
 
 Finished in 0.05786 seconds (files took 0.22818 seconds to load)
@@ -13,5 +13,5 @@ Failed examples:
 ExpenseTracker::Ledger#record when the expense lacks a payee rejects the    ↩
 expense as invalid[0m
 
-Randomized with seed 62270
+Randomized with seed 32043
 </ansii>

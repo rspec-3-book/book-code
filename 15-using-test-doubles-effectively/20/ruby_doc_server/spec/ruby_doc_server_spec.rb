@@ -5,11 +5,11 @@ RSpec.describe RubyDocServer do
   it 'finds matching ruby methods' do
     result = get('/Array/min')
 
-    expect(result).to eq(<<~EOS)
-      Content-Type: application/json
-
-      ["min","min_by","minmax","minmax_by"]
-    EOS
+    expect(result.split("\n")).to eq [
+      'Content-Type: application/json',
+      '',
+      '["min","min_by","minmax","minmax_by"]'
+    ]
   end
 
   def get(path)

@@ -1,11 +1,13 @@
-RSpec.describe Hash, :fast do
-  it 'is inherited' do |example|
-    expect(example.metadata).to include(fast: true)
+require 'pp'
+
+RSpec.describe Hash, :outer_group do
+  it 'is used by RSpec for metadata', :fast, :focus do |example|
+    pp example.metadata
   end
 
   context 'on a nested group' do
     it 'is also inherited' do |example|
-      expect(example.metadata).to include(fast: true)
+      pp example.metadata
     end
   end
 end

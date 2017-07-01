@@ -29,8 +29,8 @@ Failures:
      [31m  expected #<struct PublicCompany name="Nile", value_per_share=10,     ↩
        share_count=100000> to have attributes {:name => "Nil",              ↩
        :value_per_share => 10, :share_count => 10000, :market_cap =>        ↩
-       1000000} but had attributes {:name => "Nile", :value_per_share => 10,↩
-       :share_count => 100000, :market_cap => 1000000}[0m
+       1000000} but had attributes {:name => "Nile", :value_per_share =>    ↩
+       10, :share_count => 100000, :market_cap => 1000000}[0m
      [31m  Diff:[0m[0m
      [31m  [0m[34m@@ -1,5 +1,5 @@[0m
      [31m  [0m[0m :market_cap => 1000000,[0m

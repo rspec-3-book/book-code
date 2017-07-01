@@ -16,7 +16,7 @@ Failures:
      [31m  [0m[31m-"expense_id" => 417,[0m
      [31m  [0m[32m+"expense_id" => 42,[0m
      [31m  [0m[0m
-     [36m# ./spec/unit/app/api_spec.rb:26:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:30:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
 Finished in 0.03784 seconds (files took 0.16365 seconds to load)
@@ -24,7 +24,7 @@ Finished in 0.03784 seconds (files took 0.16365 seconds to load)
 
 Failed examples:
 
-[31mrspec ./spec/unit/app/api_spec.rb:16[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:20[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense is successfully recorded returns the expense id[0m
 
 Randomized with seed 56373

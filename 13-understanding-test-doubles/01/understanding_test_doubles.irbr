@@ -1,0 +1,140 @@
+>> require 'rspec/mocks/standalone'
+=> true
+
+>> ledger = double
+=> #<Double (anonymous)>
+
+>> ledger.record(an: :expense)
+RSpec::Mocks::MockExpectationError: #<Double (anonymous)> received          ↩
+unexpected message :record with ({:an=>:expense})
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> ledger = double('Ledger')
+=> #<Double "Ledger">
+>> ledger.record(an: :expense)
+RSpec::Mocks::MockExpectationError: #<Double "Ledger"> received unexpected  ↩
+message :record with ({:an=>:expense})
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> http_response = double('HTTPResponse', status: 200, body: 'OK')
+=> #<Double "HTTPResponse">
+>> http_response.status
+=> 200
+>> http_response.body
+=> "OK"
+
+>> http_response = double('HTTPResponse')
+=> #<Double "HTTPResponse">
+>> allow(http_response).to receive_messages(status: 200, body: 'OK')
+=> {:status=>200, :body=>"OK"}
+>> http_response.status
+=> 200
+>> http_response.body
+=> "OK"
+
+>> allow(http_response).to receive(:status).and_return(200)
+=> #<RSpec::Mocks::MessageExpectation #<Double "HTTPResponse">.status(any   ↩
+arguments)>
+>> allow(http_response).to receive(:body).and_return('OK')
+=> #<RSpec::Mocks::MessageExpectation #<Double "HTTPResponse">.body(any     ↩
+arguments)>
+
+>> http_response.status(:args, :are, :ignored)
+=> 200
+>> http_response.body(:blocks, :are, :also) { :ignored }
+=> "OK"
+
+>> expect(ledger).to receive(:record)
+=> #<RSpec::Mocks::MessageExpectation #<Double "Ledger">.record(any         ↩
+arguments)>
+
+>> RSpec::Mocks.verify
+RSpec::Mocks::MockExpectationError: (Double "Ledger").record(*(any args))
+    expected: 1 time with any arguments
+    received: 0 times with any arguments
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> # for some reason IRB does not put a newline between the last backtrace  ↩
+line
+>> # and the prompt, which causes the next line to result in an elided
+>> # backtrace in the output instead of whatever input it was.
+>> # We can work around it by evaluating any expression:
+>> nil
+=> nil
+
+>> expect(ledger).not_to receive(:reset)
+=> #<RSpec::Mocks::MessageExpectation #<Double "Ledger">.reset(any          ↩
+arguments)>
+>> ledger.reset
+RSpec::Mocks::MockExpectationError: (Double "Ledger").reset(no args)
+    expected: 0 times with any arguments
+    received: 1 time
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> yoshi = double('Yoshi').as_null_object
+=> #<Double "Yoshi">
+>> yoshi.eat(:apple)
+=> #<Double "Yoshi">
+
+>> yoshi.eat(:apple).then_shoot(:shell).then_stomp
+=> #<Double "Yoshi">
+
+>> class Game
+>>   def self.play(character)
+>>     character.jump
+>>   end
+>> end
+=> :play
+
+>> mario = double('Mario')
+=> #<Double "Mario">
+
+>> expect(mario).to receive(:jump)
+=> #<RSpec::Mocks::MessageExpectation #<Double "Mario">.jump(any arguments)>
+
+>> Game.play(mario)
+=> nil
+
+>> mario = double('Mario').as_null_object
+=> #<Double "Mario">
+>> Game.play(mario)
+=> #<Double "Mario">
+>> expect(mario).to have_received(:jump)
+=> nil
+
+>> mario = double('Mario')
+=> #<Double "Mario">
+>> allow(mario).to receive(:jump)
+=> #<RSpec::Mocks::MessageExpectation #<Double "Mario">.jump(any arguments)>
+>> Game.play(mario)
+=> nil
+>> expect(mario).to have_received(:jump)
+=> nil
+
+>> mario = spy('Mario')
+=> #<Double "Mario">
+>> Game.play(mario)
+=> #<Double "Mario">
+>> expect(mario).to have_received(:jump)
+=> nil
+
+>> random = Random.new
+=> #<Random:0x007ff2389554e8>
+>> allow(random).to receive(:rand).and_return(0.1234)
+=> #<RSpec::Mocks::MessageExpectation #<Random:0x007ff2389554e8>.rand(any   ↩
+arguments)>
+>> random.rand
+=> 0.1234
+
+>> allow(Dir).to receive(:mktmpdir).and_yield('/path/to/tmp')
+=> #<RSpec::Mocks::MessageExpectation #<Dir (class)>.mktmpdir(any arguments)>
+>> Dir.mktmpdir { |dir| puts "Dir is: #{dir}" }
+Dir is: /path/to/tmp
+=> nil
+>> expect(Dir).to have_received(:mktmpdir)
+=> nil
+
+>> RSpec::Mocks.teardown
+=> #<RSpec::Mocks::RootSpace:0x007ff2389bccb0>
+>> random.rand
+=> 0.9385928886462153

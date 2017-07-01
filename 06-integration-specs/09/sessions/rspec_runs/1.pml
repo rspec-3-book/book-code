@@ -13,12 +13,12 @@ ExpenseTracker::Ledger
 [32m      rejects the expense as invalid[0m
   #expenses_on
 [31m    returns a blank array when there are no matching expenses (FAILED - 1)[0m
-[31m    returns all expenses with the provided date (FAILED - 2)[0m
+[31m    returns all expenses for the provided date (FAILED - 2)[0m
 
 Failures:
 
-  1) ExpenseTracker::Ledger#expenses_on returns a blank array when there are↩
-  no matching expenses
+  1) ExpenseTracker::Ledger#expenses_on returns a blank array when there    ↩
+  are no matching expenses
      [31mFailure/Error: [0m[32mexpect[0m(ledger.expenses_on([31m[1;31m'[0m[31m2017-06-10[1;31m'[0m[31m[0m)).to eq([])[0m
      [31m[0m
      [31m  expected: [][0m
@@ -30,7 +30,7 @@ Failures:
      [36m# ./spec/support/db.rb:9:in `block (3 levels) in <top (required)>'[0m
      [36m# ./spec/support/db.rb:9:in `block (2 levels) in <top (required)>'[0m
 
-  2) ExpenseTracker::Ledger#expenses_on returns all expenses with the       ↩
+  2) ExpenseTracker::Ledger#expenses_on returns all expenses for the        ↩
   provided date
      [31mFailure/Error:[0m
      [31m  [0m[32mexpect[0m(ledger.expenses_on([31m[1;31m'[0m[31m2017-06-10[1;31m'[0m[31m[0m)).to contain_exactly([0m
@@ -54,8 +54,7 @@ Failed examples:
 ExpenseTracker::Ledger#expenses_on returns a blank array when there are no  ↩
 matching expenses[0m
 [31mrspec ./spec/integration/app/ledger_spec.rb:47[0m [36m#                            ↩
-ExpenseTracker::Ledger#expenses_on returns all expenses with the provided   ↩
-date[0m
+ExpenseTracker::Ledger#expenses_on returns all expenses for the provided date[0m
 
 Randomized with seed 3824
 </ansii>

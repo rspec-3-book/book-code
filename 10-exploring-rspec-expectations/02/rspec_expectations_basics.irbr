@@ -1,0 +1,58 @@
+>> require 'rspec/expectations'
+=> true
+>> include RSpec::Matchers
+=> Object
+
+>> expect(1).to eq(1)
+=> true
+>> expect(1).to eq(2)
+RSpec::Expectations::ExpectationNotMetError: 
+expected: 2
+     got: 1
+
+(compared using ==)
+
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> expect_one = expect(1)
+=> #<RSpec::Expectations::ExpectationTarget:0x007fb4eb83a818 @target=1>
+
+>> be_one = eq(1)
+=> #<RSpec::Matchers::BuiltIn::Eq:0x007fb4eb82dd98 @expected=1>
+
+>> expect_one.to(be_one)
+=> true
+>> expect_one.not_to(be_one)
+RSpec::Expectations::ExpectationNotMetError: 
+expected: value != 1
+     got: 1
+
+(compared using ==)
+
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> expect(1).not_to eq(2)
+=> true
+>> expect(1).to_not eq(2)
+=> true
+
+>> resp = Struct.new(:status, :body).new(400, 'unknown query param `sort`')
+=> #<struct status=400, body="unknown query param `sort`">
+
+>> expect(resp.status).to eq(200)
+RSpec::Expectations::ExpectationNotMetError: 
+expected: 200
+     got: 400
+
+(compared using ==)
+
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> expect(resp.status).to eq(200), "Got a #{resp.status}: #{resp.body}"
+RSpec::Expectations::ExpectationNotMetError: Got a 400: unknown query param ↩
+`sort`
+    <literal:elide> backtrace truncated </literal:elide>
+
+>> expect(resp.status).to eq(200), resp.method(:body)
+RSpec::Expectations::ExpectationNotMetError: unknown query param `sort`
+    <literal:elide> backtrace truncated </literal:elide>

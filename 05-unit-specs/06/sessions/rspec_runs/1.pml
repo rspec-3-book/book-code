@@ -18,7 +18,7 @@ Failures:
      [31m  [0m[31m-"error" => "Expense incomplete",[0m
      [31m  [0m[32m+"expense_id" => 417,[0m
      [31m  [0m[0m
-     [36m# ./spec/unit/app/api_spec.rb:48:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:52:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
   2) ExpenseTracker::API POST /expenses when the expense fails validation   ↩
@@ -29,7 +29,7 @@ Failures:
      [31m       got: 200[0m
      [31m[0m
      [31m  (compared using ==)[0m
-     [36m# ./spec/unit/app/api_spec.rb:53:in `block (4 levels) in               ↩
+     [36m# ./spec/unit/app/api_spec.rb:57:in `block (4 levels) in               ↩
      <module:ExpenseTracker>'[0m
 
 Finished in 0.03552 seconds (files took 0.13746 seconds to load)
@@ -37,9 +37,9 @@ Finished in 0.03552 seconds (files took 0.13746 seconds to load)
 
 Failed examples:
 
-[31mrspec ./spec/unit/app/api_spec.rb:44[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:48[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense fails validation returns an error message[0m
-[31mrspec ./spec/unit/app/api_spec.rb:51[0m [36m# ExpenseTracker::API POST /expenses   ↩
+[31mrspec ./spec/unit/app/api_spec.rb:55[0m [36m# ExpenseTracker::API POST /expenses   ↩
 when the expense fails validation responds with a 422 (Unprocessable entity)[0m
 
 Randomized with seed 8222

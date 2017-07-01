@@ -13,7 +13,7 @@ Failures:
      [31m       got false[0m
      [36m# ./calendar_spec.rb:13:in `block (2 levels) in <top (required)>'[0m
 
-Finished in 0.01175 seconds (files took 0.07965 seconds to load)
+Finished in 0.01342 seconds (files took 0.08792 seconds to load)
 [31m1 example, 1 failure[0m
 
 Failed examples:

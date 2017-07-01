@@ -8,7 +8,7 @@ class Invoice
   end
 
   def calculate_total
-    subtotal = @items.sum(&:cost)
+    subtotal = @items.map(&:cost).inject(0, :+)
     taxes = subtotal * tax_rate
     subtotal + taxes
   end

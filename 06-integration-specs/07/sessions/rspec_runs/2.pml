@@ -14,8 +14,8 @@ status)
      [33mFailure/Error: [0m[32mexpect[0m(expenses).to contain_exactly(coffee, zoo)[0m
      [33m  expected a collection that can be converted to an array with         ↩
        `#to_ary` or `#to_a`, but got nil[0m
-     [36m# ./spec/acceptance/expense_tracker_api_spec.rb:46:in `block (2 levels)↩
-     in <module:ExpenseTracker>'[0m
+     [36m# ./spec/acceptance/expense_tracker_api_spec.rb:46:in `block (2        ↩
+     levels) in <module:ExpenseTracker>'[0m
 
 Failures:
 
@@ -27,8 +27,8 @@ Failures:
           [31m  expected `#<struct ExpenseTracker::RecordResult :success?=true, ↩
             expense_id=5, error_message=nil>.success?` to return false, got ↩
             true[0m
-          [36m# ./spec/integration/app/ledger_spec.rb:39:in `block (4 levels) in↩
-          <module:ExpenseTracker>'[0m
+          [36m# ./spec/integration/app/ledger_spec.rb:39:in `block (4 levels)   ↩
+          in <module:ExpenseTracker>'[0m
 
      1.2) [31mFailure/Error: [0m[32mexpect[0m(result.expense_id).to eq([1;36mnil[0m)[0m
           [31m[0m
@@ -36,15 +36,15 @@ Failures:
           [31m       got: 5[0m
           [31m[0m
           [31m  (compared using ==)[0m
-          [36m# ./spec/integration/app/ledger_spec.rb:40:in `block (4 levels) in↩
-          <module:ExpenseTracker>'[0m
+          [36m# ./spec/integration/app/ledger_spec.rb:40:in `block (4 levels)   ↩
+          in <module:ExpenseTracker>'[0m
 
-     1.3) [31mFailure/Error: [0m[32mexpect[0m(result.error_message).to include([31m[1;31m'[0m[31m`payee` is↩
-     required[1;31m'[0m[31m[0m)[0m
+     1.3) [31mFailure/Error: [0m[32mexpect[0m(result.error_message).to include([31m[1;31m'[0m[31m`payee`   ↩
+     is required[1;31m'[0m[31m[0m)[0m
           [31m  expected nil to include "`payee` is required", but it does not  ↩
             respond to `include?`[0m
-          [36m# ./spec/integration/app/ledger_spec.rb:41:in `block (4 levels) in↩
-          <module:ExpenseTracker>'[0m
+          [36m# ./spec/integration/app/ledger_spec.rb:41:in `block (4 levels)   ↩
+          in <module:ExpenseTracker>'[0m
 
      1.4) [31mFailure/Error: [0m[32mexpect[0m([1;34;4mDB[0m[[33m:expenses[0m].count).to eq([1;34m0[0m)[0m
           [31m[0m
@@ -52,8 +52,8 @@ Failures:
           [31m       got: 2[0m
           [31m[0m
           [31m  (compared using ==)[0m
-          [36m# ./spec/integration/app/ledger_spec.rb:43:in `block (4 levels) in↩
-          <module:ExpenseTracker>'[0m
+          [36m# ./spec/integration/app/ledger_spec.rb:43:in `block (4 levels)   ↩
+          in <module:ExpenseTracker>'[0m
 
 Finished in 0.05691 seconds (files took 0.21616 seconds to load)
 [31m11 examples, 1 failure, 1 pending[0m

@@ -1,0 +1,4 @@
+>> require 'json'
+=> true
+>> JSON.parse('{ "expense_id": 42 }')
+=> {"expense_id"=>42}

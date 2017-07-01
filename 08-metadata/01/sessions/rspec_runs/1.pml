@@ -3,8 +3,7 @@
 <ansii>
 $ rspec spec/metadata_spec.rb
 {:block=>
-  #<Proc:0x007fdf8d2a2000@/Users/myron/book/rspec3/Book/tmp/metadata/spec   ↩
-  /metadata_spec.rb:4>,
+  #<Proc:0x007fa6fc07e6a8@~/code/metadata/spec/metadata_spec.rb:4>,
  :description_args=>["is used by RSpec for metadata"],
  :description=>"is used by RSpec for metadata",
  :full_description=>"Hash is used by RSpec for metadata",
@@ -13,16 +12,15 @@ $ rspec spec/metadata_spec.rb
  :line_number=>4,
  :location=>"./spec/metadata_spec.rb:4",
  :absolute_file_path=>
-  "/Users/myron/book/rspec3/Book/tmp/metadata/spec/metadata_spec.rb",
+  "~/code/metadata/spec/metadata_spec.rb",
  :rerun_file_path=>"./spec/metadata_spec.rb",
  :scoped_id=>"1:1",
  :execution_result=>
-  #<RSpec::Core::Example::ExecutionResult:0x007fe579023d50
-   @started_at=2017-03-23 10:02:11 -0700>,
+  #<RSpec::Core::Example::ExecutionResult:0x007ffda2846a78
+   @started_at=2017-06-13 13:34:00 -0700>,
  :example_group=>
   {:block=>
-    #<Proc:0x007fe579078aa8@/Users/myron/book/rspec3/Book/tmp/metadata/spec ↩
-    /metadata_spec.rb:3>,
+    #<Proc:0x007fa6fb914bb0@~/code/metadata/spec/metadata_spec.rb:3>,
 
 <literal:elide> truncated </literal:elide>
 
@@ -30,6 +28,6 @@ $ rspec spec/metadata_spec.rb
  :last_run_status=>"unknown"}
 [32m.[0m
 
-Finished in 0.00169 seconds (files took 0.08984 seconds to load)
+Finished in 0.00279 seconds (files took 0.09431 seconds to load)
 [32m1 example, 0 failures[0m
 </ansii>

@@ -2,13 +2,7 @@
 # but they do not render in the book so it causes no problems.
 RSpec::Matchers.define :have_a_balance_of do |amount|
   chain(:as_of) { |date| @as_of_date = date } # <label id="code.have_a_balance_of_as_of.chain" />
-  match do |account|
-    values_match?(amount, account_balance(account))
-
-    account_balance(account) == account
-  end
-
-  match { |account| values_match?(amount, account_balance(account)) }
+  match { |account| account_balance(account) == amount } # <label id="code.have_a_balance_of_as_of.match" />
   failure_message { |account| super() + failure_reason(account) }
   failure_message_when_negated { |account| super() + failure_reason(account) }
 
