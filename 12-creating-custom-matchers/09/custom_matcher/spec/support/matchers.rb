@@ -1,7 +1,7 @@
 # We disable line length because the labels cause lines to be too long
 # but they do not render in the book so it causes no problems.
 RSpec::Matchers.define :have_a_balance_of do |amount|
-  chain(:as_of) { |date| @as_of_date = date } # <label id="code.have_a_balance_of_as_of.chain" />
+  chain(:as_of) { |date| @as_of_date = date }
   match do |account|
     values_match?(amount, account_balance(account))
 
@@ -15,10 +15,10 @@ RSpec::Matchers.define :have_a_balance_of do |amount|
 private
 
   def failure_reason(account)
-    ", but had a balance of #{account_balance(account)}" # <label id="code.have_a_balance_of_as_of.failure_reason" />
+    ", but had a balance of #{account_balance(account)}"
   end
 
-  def account_balance(account) # <label id="code.have_a_balance_of_as_of.account_balance" />
+  def account_balance(account)
     if @as_of_date
       account.balance_as_of(@as_of_date)
     else

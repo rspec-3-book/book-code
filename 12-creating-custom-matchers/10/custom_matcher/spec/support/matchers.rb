@@ -1,23 +1,23 @@
 # We disable line length because the labels cause lines to be too long
 # but they do not render in the book so it causes no problems.
-class HaveABalanceOf # <label id="code.have_balance_of-class-start" />
-  include RSpec::Matchers::Composable # <label id="code.have_balance_of-composable" />
+class HaveABalanceOf
+  include RSpec::Matchers::Composable
 
-  def initialize(amount) # <label id="code.have_balance_of-class-init" />
+  def initialize(amount)
     @amount = amount
   end
 
-  def as_of(date) # <label id="code.have_balance_of-class-as-of" />
+  def as_of(date)
     @as_of_date = date
     self
   end
 
-  def matches?(account) # <label id="code.have_balance_of-class-matches" />
+  def matches?(account)
     @account = account
     values_match?(@amount, account_balance)
   end
 
-  def description # <label id="code.have_balance_of-class-description" />
+  def description
     if @as_of_date
       "have a balance of #{description_of(@amount)} as of #{@as_of_date}"
     else
@@ -25,11 +25,11 @@ class HaveABalanceOf # <label id="code.have_balance_of-class-start" />
     end
   end
 
-  def failure_message # <label id="code.have_balance_of-class-failure_msg" />
+  def failure_message
     "expected #{@account.inspect} to #{description}" + failure_reason
   end
 
-  def failure_message_when_negated # <label id="code.have_balance_of-class-failure_msg_when_negated" />
+  def failure_message_when_negated
     "expected #{@account.inspect} not to #{description}" + failure_reason
   end
 

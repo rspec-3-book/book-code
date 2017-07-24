@@ -3,25 +3,25 @@ require 'berlin_transit_ticket'
 # We disable line length because the labels cause lines to be too long
 # but they do not render in the book so it causes no problems.
 RSpec.describe BerlinTransitTicket do
-  let(:ticket) { BerlinTransitTicket.new } # <label id="code.define-ticket" />
+  let(:ticket) { BerlinTransitTicket.new }
 
-  before do # <label id='code.before'/>
+  before do
     # These values depend on `let` definitions
     # defined in the nested contexts below!
     #
-    ticket.starting_station = starting_station # <label id="code.use-starting" />
-    ticket.ending_station   = ending_station   # <label id="code.use-ending" />
+    ticket.starting_station = starting_station
+    ticket.ending_station   = ending_station
   end
 
-  let(:fare) { ticket.fare } # <label id="code.define-fare"/>
+  let(:fare) { ticket.fare }
 
   context 'when starting in zone A' do
-    let(:starting_station) { 'Bundestag' }    # <label id="code.define-starting" />
+    let(:starting_station) { 'Bundestag' }
 
     context 'and ending in zone B' do
-      let(:ending_station) { 'Leopoldplatz' } # <label id="code.define-ending" />
+      let(:ending_station) { 'Leopoldplatz' }
 
-      it 'costs €2.70' do # <label id="code.example" />
+      it 'costs €2.70' do
         expect(fare).to eq 2.7
       end
     end

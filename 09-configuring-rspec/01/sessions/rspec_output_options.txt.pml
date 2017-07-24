@@ -8,7 +8,8 @@
                                        [d]ocumentation (group and example   ↩
                                           names)
                                        [h]tml
-                                       [j]son custom formatter class name
+                                       [j]son
+                                       custom formatter class name
   -o, --out FILE                     Write output to a file instead of      ↩
                                      $stdout. This option applies to the    ↩
                                      previously specified --format, or the  ↩

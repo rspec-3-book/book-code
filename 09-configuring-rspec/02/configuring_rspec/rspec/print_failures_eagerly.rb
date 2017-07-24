@@ -7,16 +7,16 @@ require 'rspec/print_failures_eagerly/version'
 module RSpec
   module PrintFailuresEagerly
     class Formatter
-      RSpec::Core::Formatters.register self, :example_failed # <label id="code.formatter.register" />
+      RSpec::Core::Formatters.register self, :example_failed
 
-      def initialize(output) # <label id="code.formatter.initialize" />
+      def initialize(output)
         @output = output
         @last_failure_index = 0
       end
 
-      def example_failed(notification) # <label id="code.formatter.example-failed" />
+      def example_failed(notification)
         @output.puts
-        @output.puts notification.fully_formatted(@last_failure_index += 1) # <label id="code.formatter.print-fully-formatted" />
+        @output.puts notification.fully_formatted(@last_failure_index += 1)
         @output.puts
       end
     end

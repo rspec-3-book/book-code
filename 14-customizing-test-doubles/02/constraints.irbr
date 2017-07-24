@@ -25,7 +25,7 @@ arguments)>
 >> imdb.rating_for('Jaws')
 => 5
 
->> require './code/14-customizing-test-doubles/stock_ticker'
+>> require './code/14-customizing-test-doubles/02/stock_ticker'
 RSpec::Mocks::MockExpectationError: (Double "Jaws").record_review("Good")
     expected: 1 time with arguments: ("Good")
     received: 0 times

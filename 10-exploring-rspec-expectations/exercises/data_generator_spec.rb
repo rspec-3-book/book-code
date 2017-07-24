@@ -94,6 +94,6 @@ RSpec.describe DataGenerator do
 
   it "generates a list of user records" do
     users = DataGenerator.new.users(4)
-    expect(users).to all_match_the_shape_of_user_record
+    expect(users).to all_match_the_shape_of_a_user_record
   end
 end

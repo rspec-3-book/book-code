@@ -7,8 +7,7 @@
 => #<Object:0x007fe2e213ea58>
 
 >> expect(1).to matcher
-NoMethodError: undefined method `matches?' for #<Object:0x007fe2e213ea58>
-Did you mean?  match
+NoMethodError: undefined method `matches?' for #<Object:0x007feff9326f18>
     <literal:elide> backtrace truncated </literal:elide>
 
 >> def matcher.matches?(actual)
