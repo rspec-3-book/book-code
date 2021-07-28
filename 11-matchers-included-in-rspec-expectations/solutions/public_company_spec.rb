@@ -4,7 +4,7 @@ PublicCompany = Struct.new(:name, :value_per_share, :share_count) do
   end
 
   def market_cap
-    @market_cap ||= value_per_share * share_count
+    @market_cap = value_per_share * share_count
   end
 end
 

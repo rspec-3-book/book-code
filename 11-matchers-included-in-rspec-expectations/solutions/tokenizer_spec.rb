@@ -6,7 +6,7 @@ end
 
 RSpec.describe Tokenizer do
   let(:text) do
-    <<-EOS
+    <<~EOS
       I am Sam.
       Sam I am.
       Do you like green eggs and ham?
